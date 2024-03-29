@@ -14,13 +14,16 @@
 
 
 	int main(void) {
-
-		 AirportCode C;
- 		NodePointer L;
-	    strcpy(C, "BRU");
- 		printf("%s\n", C);
+		AirportCode C;
+ 		NodePointer L,K;
+		K = (NodePointer) malloc(sizeof(NodeType));
+		strcpy(C,"GRE");
+		strcpy(K->Airport, C);
+ 		printf("%s \n", K->Airport);
  		L=(NodePointer)malloc(sizeof(NodeType));
+		strcpy(C,"ITA");
  		strcpy(L->Airport, C);
- 		printf("%s \n", L->Airport);
-		return 0;
+ 		printf("%s %s\n", L->Airport,K->Airport);
+				return 0;
 	}
+		
